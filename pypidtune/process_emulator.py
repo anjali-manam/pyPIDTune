@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 from matplotlib import animation
 from pylogix import PLC
 from asyncua.sync import Client, ua
-import common
+from . import common
 
 SAMPLE_RATE = 0.1
 
@@ -520,3 +520,4 @@ class ProcessEmulator:
 if __name__ == "__main__":
     emulator_app = ProcessEmulator()
     emulator_app.root.mainloop()
+
