@@ -21,7 +21,7 @@ import numpy as np
 from scipy.optimize import minimize
 import ttkbootstrap as ttk
 import matplotlib.pyplot as plt
-import common
+from . import common
 
 
 class PIDTuner:
@@ -533,3 +533,4 @@ class PIDTuner:
 if __name__ == "__main__":
     tuner_app = PIDTuner()
     tuner_app.root.mainloop()
+
