@@ -20,7 +20,7 @@ from PIL import Image, ImageTk
 import ttkbootstrap as ttk
 import numpy as np
 import matplotlib.pyplot as plt
-import common
+from . import common
 
 
 class PIDSimulator:
@@ -253,3 +253,4 @@ class PIDSimulator:
 if __name__ == "__main__":
     sim_app = PIDSimulator()
     sim_app.root.mainloop()
+
