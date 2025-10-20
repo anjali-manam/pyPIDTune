@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 from matplotlib import animation
 from pylogix import PLC
 from asyncua.sync import Client, ua
-import common
+from . import common
 
 
 class PIDLogger:
@@ -586,3 +586,4 @@ class PIDLogger:
 if __name__ == "__main__":
     logger_app = PIDLogger()
     logger_app.root.mainloop()
+
